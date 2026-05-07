@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class armstrong{
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        
+System.out.println("enter a number:");
+int num=s.nextInt();
+int original=num;
+
+int sum=0;
+while(num>0){
+    int digit=num%10;
+
+        sum=sum+(digit*digit*digit);
+    num=num/10;
+}
+
+
+
+System.out.println("sum:"+sum);
+if(sum==original){
+    System.out.println("is armstrong");
+}
+else{
+    System.out.println("not an armstrong");
+}
+
+    }
+}
